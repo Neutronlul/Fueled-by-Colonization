@@ -2,12 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 
     <link rel="icon" href="images/icons8-elite-dangerous-96.png">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    
+
+    <section>
+        <form method="post" action="welcome.php">
+            <input type="text" name="username" id="loginID" placeholder="Username" required>
+
+            <input type="password" name="password" id="passwordID" placeholder="Password" required>
+
+            <input type="submit" name="login" value="login">
+        </form>
+    </section>
+
+    <aside>
+
+    </aside>
 </body>
 </html>
