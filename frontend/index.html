@@ -23,7 +23,6 @@
     </header>
 
     <section>
-        <button id="getFactButton">Get Cat Fact</button>
     <p id="catFact"></p>
 
     <script>
@@ -33,13 +32,13 @@
                 const data = await response.json();
 
                 document.getElementById('catFact').textContent = data.fact;
+                console.error(document.getElementById('loginID').value);
                 console.error(document.getElementById('passwordID').value);
             } catch (error) {
                 console.error('Error:', error);
             }
         }
 
-        document.getElementById('getFactButton').addEventListener('click', getCatFact);
     </script>
 
         <p>
