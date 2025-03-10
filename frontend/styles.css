@@ -65,9 +65,13 @@ body {
 /*** Header Rules   ***/
 
 header {
+    margin-top: 20px;
     flex-basis: 100%;
     display: flex;
     margin-bottom: 25px;
+    font-weight: bold;
+    background-color: #411239;
+    font-style:italic;
 }
 
 header div {
@@ -77,6 +81,7 @@ header div {
 
 header div h1 {
     font-size: 60px;
+    padding-top: 25px;
 }
 
 header div h2 {
@@ -87,6 +92,7 @@ header div h2 {
 header img {
     display: block;
     padding: 10px;
+    margin-left: 25px;
 }
 
 /*** Section Rules   ***/
