@@ -6,8 +6,21 @@
 
     <link rel="icon" href="images/testlogo.png">
     <link href="styles.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
+    <header>
+        <a href="index.html"><img src="images/testlogo.png" alt="logo" height="100" width="100"></a>
+        <div>
+            <h1>Lorem Ipsum</h1>
+            <h2>Pop The Bubble!</h2>
+        </div>
+    </header>
 
     <section>
         <p>
@@ -16,13 +29,17 @@
     </section>
 
     <aside>
-        <form method="post" action="welcome.php">
-            <input type="text" name="username" id="loginID" placeholder="Username" required>
+        <div>
+            <form method="post" action="welcome.php">
+                <input type="text" name="username" id="loginID" placeholder="Username" required>
 
-            <input type="password" name="password" id="passwordID" placeholder="Password" required>
+                <input type="password" name="password" id="passwordID" placeholder="Password" required>
 
-            <input type="submit" name="login" value="login">
-        </form>
+                <input type="submit" name="Login" value="Login">
+            </form>
+
+            <p><a href="#">Register</a></p>
+        </div>
     </aside>
 </body>
 </html>

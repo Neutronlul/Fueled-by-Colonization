@@ -1,5 +1,174 @@
 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-    background-color: #2B2323;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input {
+    all: unset;
+}
+
+/**************** end CSS RESET *************/
+
+/*** Body Rules **/
+
+body {
+    background-color: #000000;
     color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-size: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+/*** Header Rules   ***/
+
+header {
+    flex-basis: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+header div {
+    text-align: center;
+    width: 100%;
+}
+
+header div h1 {
+    font-size: 60px;
+}
+
+header div h2 {
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+header img {
+    display: block;
+    padding: 10px;
+}
+
+/*** Section Rules   ***/
+
+section {
+    width: 74%;
+    margin-right: 1%;
+}
+
+section p {
+    margin: 15px;
+    padding: 10px;
+}
+
+/*** Aside Rules   ***/
+
+aside {
+    display: flex;
+    width: 24%;
+    margin-left: 1%;
+    border-radius: 25px;
+    text-align: center;
+    color: black;
+    background: linear-gradient(0deg, rgba(11,146,255,1) 0%, rgba(147,110,230,1) 50%, rgba(204,33,203,1) 100%);
+}
+
+aside div {
+    border-radius: 25px;
+    background-color: #01001a;
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    
+}
+
+aside div form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+aside div form input {
+    flex-basis: 75%;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #111111;
+    color: #936ee6;
+
+}
+
+aside div form input:last-of-type {
+    background-color: #936ee6;
+    border-radius: 15px;
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+aside div form input:last-of-type:hover {
+    background-color: aliceblue;
+}
+
+aside div p {
+    margin-top: 100px;
+    margin-bottom: 140px;
+}
+
+aside div p a {
+    background-color: #936ee6;
+    border-radius: 15px;
+    padding: 0 25.4% 0 25.4% ;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+aside div p a:hover {
+    background-color: aliceblue;
+}
+
+form, form input {
+    text-decoration: none;
+    font-family: inherit;
 }
