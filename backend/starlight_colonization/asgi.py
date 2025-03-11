@@ -1,5 +1,5 @@
 """
-ASGI config for FueledbyColonization project.
+ASGI config for starlight_colonization project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'FueledbyColonization.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'starlight_colonization.settings')
 
 application = get_asgi_application()
