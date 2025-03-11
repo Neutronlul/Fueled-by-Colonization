@@ -34,6 +34,7 @@
                 document.getElementById('catFact').textContent = data.fact;
                 console.error(document.getElementById('loginID').value);
                 console.error(document.getElementById('passwordID').value);
+                console.error(document.getElementById('confirm-passwordID').value);
             } catch (error) {
                 console.error('Error:', error);
             }
@@ -41,22 +42,37 @@
 
     </script>
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+    <!-- Script Below Is not Working-->
+
+    <script>
+        var check = function() {
+        if (document.getElementById('passwordID').value ==
+            document.getElementById('confirm-passwordID').value) {
+            document.getElementById('message').style.color = 'green';
+            document.getElementById('message').innerHTML = 'Passwords Match';
+        } else {
+            document.getElementById('message').style.color = 'red';
+            document.getElementById('message').innerHTML = 'Passwords Do Not Match';
+        }
+        }
+    </script>
+
     </section>
 
     <aside>
+
         <div>
-            <form action="JavaScript:getCatFact()">
+            <form id=register action="JavaScript:getCatFact()" action="JavaScript:validatePassword()">
                 <input type="text" name="username" id="loginID" placeholder="Username" required>
 
-                <input type="password" name="password" id="passwordID" placeholder="Password" required>
+                <input type="password" name="password" id="passwordID" placeholder="Password" onkeyup='check();' required>
 
-                <input type="submit" name="Login" value="Login">
+                <input type="password" name="confirm-password" id="confirm-passwordID" placeholder="Confirm Password" onkeyup='check();' required>
+
+                <input type="submit" name="Register" value="Register">
+
+                <span id='message'></span>
             </form>
-
-            <p><a href="register.html">Register</a></p>
         </div>
     </aside>
 </body>

@@ -174,7 +174,17 @@ aside div p a:hover {
     background-color: aliceblue;
 }
 
+/*** Form Rules ***/
+
 form, form input {
     text-decoration: none;
     font-family: inherit;
+}
+
+#register {
+    padding-bottom: 50px;
+}
+
+span {
+    padding-top: 20px;
 }
