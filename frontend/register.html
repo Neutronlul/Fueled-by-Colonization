@@ -22,44 +22,51 @@
         </div>
     </header>
 
-    <section>
-    <p id="catFact"></p>
-
-    <script>
-        async function getCatFact() {
-            try {
-                const response = await fetch('https://catfact.ninja/fact');
-                const data = await response.json();
-
-                document.getElementById('catFact').textContent = data.fact;
-                console.error(document.getElementById('loginID').value);
-                console.error(document.getElementById('passwordID').value);
-                console.error(document.getElementById('confirm-passwordID').value);
-            } catch (error) {
-                console.error('Error:', error);
-            }
-        }
-
-    </script>
-
-    <!-- Script Below Is not Working-->
-
-    <script>
-        var check = function() {
-        if (document.getElementById('passwordID').value ==
-            document.getElementById('confirm-passwordID').value) {
-            document.getElementById('message').style.color = 'green';
-            document.getElementById('message').innerHTML = 'Passwords Match';
-        } else {
-            document.getElementById('message').style.color = 'red';
-            document.getElementById('message').innerHTML = 'Passwords Do Not Match';
-        }
-        }
-    </script>
-
-    </section>
 
     <aside>
+
+        
+
+        <script>
+            async function getCatFact() {
+                try {
+                    const response = await fetch('https://catfact.ninja/fact');
+                    const data = await response.json();
+    
+                    document.getElementById('catFact').textContent = data.fact;
+                    console.error(document.getElementById('loginID').value);
+                    console.error(document.getElementById('passwordID').value);
+                    console.error(document.getElementById('confirm-passwordID').value);
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            }
+    
+        </script>
+    
+        <!-- Script Below Is not Working-->
+    
+        <script>
+            var check = function() {
+            if (document.getElementById('passwordID').value ==
+                document.getElementById('confirm-passwordID').value) {
+                document.getElementById('message').style.color = 'green';
+                document.getElementById('message').innerHTML = 'Passwords Match';
+            } else {
+                document.getElementById('message').style.color = 'red';
+                document.getElementById('message').innerHTML = 'Passwords Do Not Match';
+            }
+            }
+        </script>
+
+
+
+
+
+
+
+
+
 
         <div>
             <form id=register action="JavaScript:getCatFact()" action="JavaScript:validatePassword()">
@@ -72,7 +79,10 @@
                 <input type="submit" name="Register" value="Register">
 
                 <span id='message'></span>
+                
             </form>
+
+            <p id="catFact"></p>
         </div>
     </aside>
 </body>
