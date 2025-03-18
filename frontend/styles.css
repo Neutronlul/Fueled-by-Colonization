@@ -48,6 +48,11 @@ input {
     all: unset;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /**************** end CSS RESET *************/
 
 /*** Body Rules **/
@@ -83,17 +88,21 @@ header div {
 header div h1 {
     font-size: 60px;
     padding-top: 25px;
+    z-index: 0;
 }
 
 header div h2 {
     font-size: 36px;
     margin-top: 10px;
+    z-index: 0;
 }
 
 header img {
     display: block;
     padding: 10px;
     margin-left: 25px;
+    position: relative;
+    z-index: 1;
 }
 
 /*** Section Rules   ***/
