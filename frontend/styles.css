@@ -99,7 +99,8 @@ header img {
 
 section {
     width: 74%;
-    margin-right: 1%;
+    margin:auto;
+    margin-top: 10px;
 }
 
 section p {
@@ -111,8 +112,9 @@ section p {
 
 aside {
     display: flex;
-    width: 24%;
-    margin-left: 1%;
+    width: 460px;
+    height: 478px;
+    margin: auto;
     border-radius: 25px;
     text-align: center;
     color: black;
@@ -122,8 +124,9 @@ aside {
 aside div {
     border-radius: 25px;
     background-color: #01001a;
-    width: 95%;
-    height: 95%;
+    color: #936ee6;
+    width: 437px;
+    height: 454px;
     margin: auto;
     
 }
